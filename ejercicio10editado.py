@@ -1,10 +1,15 @@
-producto = 1
 numero = 1
+multiplicacion = 1
 
-while True:
-    if numero > 20:
+while numero <= 20:
+    if numero == 10:
+        numero += 1
+        continue
+
+    if numero > 15:
         break
-    producto *= numero
+
+    multiplicacion *= numero
     numero += 1
 
-print(f"El producto de los 20 primeros números naturales es: {producto}")
+print("El resultado de la multiplicación es:", multiplicacion)
